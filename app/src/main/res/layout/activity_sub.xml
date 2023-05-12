@@ -43,9 +43,6 @@
         app:layout_constraintBottom_toTopOf="@id/btn_reset"
         android:layout_margin="20dp"
         android:background="@color/notepad_background"
-        android:scrollbars="vertical"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        android:scrollbarSize="5dp"
         />
     <!--
     <ImageView
