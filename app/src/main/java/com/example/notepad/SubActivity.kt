@@ -20,7 +20,7 @@ class SubActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        //intent로 받은 값 화면에 연결시키기
+        //intent 로 받은 값 화면에 연결시키기
         val title = intent.getStringExtra("title")
         val content = intent.getStringExtra("content")
         val date = LocalDate.now().toString()
@@ -31,10 +31,10 @@ class SubActivity : AppCompatActivity() {
         binding.tvDate.text = "작성 날짜 : $date"
 
 
-        //재입력 버튼 누르면 activity 삭제시키고 mainactivity 실행시키기.
+        //재입력 버튼 누르면 activity 삭제시키고 mainActivity 실행시키기.
         binding.btnReset.setOnClickListener {
-            val sintent = Intent(this@SubActivity, MainActivity::class.java)
-            startActivity(sintent)
+            val sIntent = Intent(this@SubActivity, MainActivity::class.java)
+            startActivity(sIntent)
             finish()
         }
 
